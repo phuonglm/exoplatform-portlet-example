@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:c="http://java.sun.com/jstl/core">
+<head>
+
+      <c:set var="context" value="${facesContext.externalContext.requestContextPath}" />
+      <style type="text/css">
+         .home-container{
+            width: 630px;
+            height: 296px;
+            position: relative;
+         }
+
+         .home-container .content {
+            position: absolute;
+            top: 148px;
+            left: 22px;
+            width: 300px;
+         }
+      </style>
+
+</head>
+<body>
+      <map id="imgmap20091021171714" name="imgmap20091021171714">
+          <area shape="rect" alt="" title="" coords="277,147,621,273" href="http://www.vimeo.com/wesleyhales/videos/sort:date" target="_blank" />
+          <area shape="rect" alt="" title="" coords="301,12,620,121" href="http://www.jboss.org/portletbridge/docs" target="_blank" />
+          <area shape="rect" alt="" title="" coords="2,3,297,141" href="http://www.jboss.org/portletbridge/" target="_blank" /></map>
+      <p><h:graphicImage value="/images/archetypes-star.gif" usemap="#imgmap20091021171714" style="border:0;"/> Congratulations!, You have successfuly installed the JSF RI portlet using the <a href="http://www.jboss.org/portletbridge/">JBoss Portlet Bridge</a>.</p>
+            <br/>
+      <div class="home-container">
+          <h:graphicImage value="/images/archetypes-3.jpg" usemap="#imgmap20091021171714" style="border:0;"/>
+         <div class="content">
+             <object width="224" height="126">
+                <param value="true" name="allowfullscreen"/>
+                <param value="always" name="allowscriptaccess"/>
+                <param value="http://vimeo.com/moogaloop.swf?clip_id=11484018&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1" name="movie"/>
+                <embed width="224" height="126" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" src="http://vimeo.com/moogaloop.swf?clip_id=11484018&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1&amp;autoplay=0"/>
+            </object>
+         </div>
+
+      </div>
+</body>
+</html>
+
+
+
+
+

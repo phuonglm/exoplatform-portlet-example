@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+<package name="view" extends="struts-portlet-default" namespace="/view">
+   <action name="index" class="com.mycompany.ListBookmarksAction">
+      <result>/WEB-INF/jsp/view/index.jsp</result>
+   </action>
+</package>
+	
+<package name="edit" extends="struts-portlet-default" namespace="/edit">
+
+   <action name="index" class="com.mycompany.ListBookmarksAction">
+      <result>/WEB-INF/jsp/edit/index.jsp</result>
+   </action>
+
+   <action name="addBookmark" class="com.mycompany.AddBookmarkAction">
+      <result type="redirectAction">
+         <param name="actionName">index</param>
+      </result>
+   </action>
+	
+	<action name="deleteBookmark" class="com.mycompany.DeleteBookmarkAction">
+   <result type="redirectAction">
+      <param name="actionName">index</param>
+   </result>
+</action>
+	
+	<action name="editBookmark" class="com.mycompany.EditBookmarkAction">
+   <result type="redirectAction">
+      <param name="actionName">index</param>
+   </result>
+   <result name="input">/WEB-INF/jsp/edit/edit.jsp</result>
+</action>
+
+</package>
+</struts>

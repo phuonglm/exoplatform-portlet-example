@@ -1,0 +1,54 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:rich="http://richfaces.org/rich">
+	<ui:define name="content">
+
+
+      <h2>JSR-301 EL support</h2>
+         <span style="font-weight:bold;">portletConfig</span>: #{portletConfig} -->: object of type javax.portlet.PortletConfig
+         <br/><br/>
+
+         <span style="font-weight:bold;">sessionPortletScope</span>: #{sessionPortletScope} -->:  mutable Map containing PortletSession attribute/values at PORTLET_SCOPE.
+                <br/><br/>
+         <span style="font-weight:bold;">sessionApplicationScope</span>: #{sessionApplicationScope} -->: mutable Map containing PortletSession attribute/values at APPLICATION_SCOPE.
+                <br/><br/>
+         <span style="font-weight:bold;">portletPreferenceValue</span>: #{portletPreferenceValue} -->: immutable Map containing the set of portlet preferences where the key is the name of the preference and the value is the first portlet preference value from the (potential) set of values.
+                <br/><br/>
+         <span style="font-weight:bold;">portletPreferenceValues</span>: #{portletPreferenceValues} -->: immutable Map containing the set portlet preferences where the key is the name of the preference and the values are the set of this portlet preference's values.
+                <br/><br/> <hr/>
+
+
+      <h2 style="color:#777">Standard EL in a portlet</h2>
+         <span style="font-weight:bold;">application</span>: #{application} -> javax.portlet.PortletContext
+               <br/><br/>
+         <span style="font-weight:bold;">applicationScope</span>: #{applicationScope} -> Map of portletContext attributes
+               <br/><br/>
+         <span style="font-weight:bold;">cookie</span>: #{cookie} -> Map of portletRequest cookies (null)
+               <br/><br/>
+         <span style="font-weight:bold;">facesContext</span>: #{facesContext} -> the FacesContext for this request
+               <br/><br/>
+         <span style="font-weight:bold;">header</span>: #{header} -> Map of portletRequest properties
+               <br/><br/>
+         <span style="font-weight:bold;">headerValues</span>: #{headerValues} -> Map of portletRequest property values
+               <br/><br/>
+         <span style="font-weight:bold;">initParam</span>: #{initParam} -> Map of portletContext initParameters
+               <br/><br/>
+         <span style="font-weight:bold;">param</span>: #{param} -> Map of portletRequest parameters
+               <br/><br/>
+         <span style="font-weight:bold;">paramValues</span>: #{paramValues} -> Map of portletRequest parameter values
+               <br/><br/>
+         <span style="font-weight:bold;">request</span>: #{request} -> java.portlet.PortletRequest
+               <br/><br/>
+         <span style="font-weight:bold;">requestScope</span>: #{requestScope} -> Map of portletRequest attributes
+               <br/><br/>
+         <span style="font-weight:bold;">session</span>: #{session} -> javax.portlet.PortletSession
+               <br/><br/>
+         <span style="font-weight:bold;">sessionScope</span>: #{sessionScope} -> Map of portlet session PORTLET_SCOPE attributes
+               <br/><br/>
+         <span style="font-weight:bold;">view</span>: #{view} -> facesContext.getViewRoot()
+
+        </ui:define>
+</ui:composition>
+

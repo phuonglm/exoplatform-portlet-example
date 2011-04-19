@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<portlet-app
+    xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
+    version="1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd
+                        http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
+
+    <portlet>
+        <description>eXo Demo for generic jsp portlet.</description>
+        <portlet-name>example-portlet-jsp</portlet-name>
+        <display-name>example-portlet-jsp Portlet</display-name>
+
+        <portlet-class>org.exoplatform.portal.example.MyPortlet</portlet-class>
+
+        <supports>
+            <mime-type>text/html</mime-type>
+            <portlet-mode>VIEW</portlet-mode>
+        </supports>
+
+        <supported-locale>en</supported-locale>
+
+        <portlet-info>
+            <title>Generic jsp portlet</title>
+            <short-title>generic jsp portlet</short-title>
+            <keywords>Demo</keywords>
+        </portlet-info>
+    </portlet>
+</portlet-app>
